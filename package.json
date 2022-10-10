@@ -19,7 +19,7 @@
     "author": "",
     "license": "ISC",
     "bugs": {
-	    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+        "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
     },
     "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
     "devDependencies": {
@@ -36,14 +36,18 @@
     },
     "dependencies": {
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.4.0",
+        "styled-components": "^5.3.6"
     },
     "standard": {
         "ignore": [
-        "/api/**"
+            "/api/**"
         ]
     },
     "eslintConfig": {
-	    "extends": ["./node_modules/standard/eslintrc.json"]
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
     }
 }

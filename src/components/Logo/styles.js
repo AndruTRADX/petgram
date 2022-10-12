@@ -9,5 +9,5 @@ export const LogoContainer = styled.div`
 `
 
 export const Svg = styled.svg`
-  width: 280px;
+  width: 250px;
 `

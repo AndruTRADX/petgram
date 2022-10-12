@@ -1,11 +1,11 @@
 import React from 'react'
-import { Anchor, Image } from './Styles'
+import { Linked, Image, ImageContainer } from './Styles'
 
-const DEFAULT_IMAGE = 'https://i.imgur.com/dJa0Hpl.jpg'
-
-export const Category = ({ cover = DEFAULT_IMAGE, path, emoji = '?' }) => (
-  <Anchor href={path}>
-    <Image src={cover} />
+export const Category = ({ cover, path = '#', emoji = '...' }) => (
+  <Linked to={path}>
+    <ImageContainer>
+      <Image src={cover} />
+    </ImageContainer>
     {emoji}
-  </Anchor>
+  </Linked>
 )

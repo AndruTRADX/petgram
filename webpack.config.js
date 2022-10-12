@@ -2,7 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   output: {
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -10,6 +11,10 @@ module.exports = {
         test: /\.(jsx|js)?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.png/,
+        type: 'asset/resource'
       }
     ]
   },
@@ -18,5 +23,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
-  ]
+  ],
+  devServer: {
+    historyApiFallback: {
+      disableDotRule: true
+    }
+  }
 }

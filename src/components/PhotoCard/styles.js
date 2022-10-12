@@ -6,6 +6,7 @@ export const CardContainer = styled.article`
   box-shadow: 0 10px 14px rgba(0, 0, 0, .12);
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
+  min-height: 200px;
 `
 
 export const ImgWrapper = styled.div`
@@ -19,22 +20,10 @@ export const ImgWrapper = styled.div`
 `
 
 export const Img = styled.img`
-  ${fadeIn({ time: '1s' })}
+  ${fadeIn()}
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
-`
-
-export const Button = styled.button`
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  font-size: small;
-  font-weight: 300;
-
-  & svg {
-    margin-right: 4px;
-  }
 `

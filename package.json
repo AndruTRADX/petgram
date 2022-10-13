@@ -1,27 +1,27 @@
 {
-    "name": "petgram",
+    "name": "curso-platzi-react-avanzado",
     "version": "1.0.0",
-    "description": "",
+    "description": "Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)",
     "main": "index.js",
-    "homepage": "https://AndruTRADX.github.io/petgram",
     "scripts": {
+        "now-build": "npm run build",
         "build": "webpack",
-        "vercel-build": "npm run build",
-        "dev": "webpack serve",
         "lint": "standard",
-        "lint:fix": "standard --fix",
+        "dev": "webpack-dev-server --history-api-fallback",
+        "serve:dev": "webpack --mode 'development' && npx serve dist -s",
         "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "bugs": {
-        "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
     },
     "keywords": [],
-    "author": "Andrés Esteban Rodríguez Jimenez",
+    "author": "",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+    },
+    "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
     "devDependencies": {
         "@babel/core": "^7.19.3",
         "@babel/preset-env": "^7.19.4",
